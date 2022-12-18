@@ -1,0 +1,122 @@
+.l-signin {
+  background: url("../../assets/img/img-hero.jpg") no-repeat center center/cover;
+  position: relative;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 515px;
+  padding: 100px 0;
+  width: 100%;
+}
+
+.l-signin__bg {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.l-signin__form {
+  position: relative;
+  width: 450px;
+  max-width: 100%;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 60px 68px 40px;
+  border: 1px solid #fff;
+}
+
+.l-signin__form .heading {
+  margin-bottom: 28px;
+}
+
+.l-signin__form .field {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.l-signin__form .field .txt {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  transition: 0.3s;
+  font-size: 16px;
+  color: var(--l-gray);
+}
+
+.l-signin__form .field input:focus-visible ~ .txt {
+  transform: none;
+  top: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.l-signin__form .field input {
+  width: 100%;
+  border: 0;
+  border-radius: 4px;
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  padding: 16px 20px 0;
+  background: #333;
+}
+
+.l-signin .c-button {
+  width: 100%;
+  margin-top: 24px;
+  padding: 15px 0;
+  font-weight: bold;
+}
+
+/* Input has text */
+.l-signin__form .field input.hasText ~ .txt {
+  transform: none;
+  top: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.l-signin__register {
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.l-signin__register__link {
+  color: red;
+  padding-left: 0.5rem;
+}
+
+.l-signin__register__link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 750px) {
+  .l-signin {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .l-signin__form .heading {
+    font-size: 1.6rem;
+  }
+  .l-signin__register {
+    display: block;
+  }
+  .l-signin__form {
+    padding: 2rem 1rem;
+  }
+  .l-signin__register__link {
+    display: block;
+  }
+}

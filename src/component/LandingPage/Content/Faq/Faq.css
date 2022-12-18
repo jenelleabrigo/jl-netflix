@@ -1,0 +1,79 @@
+.l-faq__inner {
+  padding: 70px 0;
+  width: 75%;
+  margin: auto;
+}
+.l-faq__inner__heading {
+  font-size: 3.125rem;
+  text-align: center;
+}
+.l-faq__inner__item-container {
+  margin: 32px 0;
+}
+.l-faq__inner__item {
+  margin-bottom: 8px;
+}
+.l-faq__inner__item__q {
+  padding: 0.8em 2.2em 0.8em 1.2em;
+  background-color: var(--d-gray);
+  border-bottom: 1px solid #000;
+}
+.l-faq__inner__item__q__txt {
+  font-size: 26px;
+  line-height: 1.5;
+  font-weight: 500;
+  position: relative;
+}
+.l-faq__inner__item__q__txt::after {
+  position: absolute;
+  content: "";
+  height: 2rem;
+  width: 2rem;
+  background: url("../../../../assets/img/icons/close.svg") no-repeat center center/cover;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  transform: rotate(45deg);
+}
+.l-faq__inner__item__q__txt.show::after {
+  transform: rotate(0deg);
+}
+.l-faq__inner__item__a {
+  max-height: 0;
+  overflow: hidden;
+  transition: 0.3s;
+}
+.l-faq__inner__item__a.show {
+  max-height: 1200px;
+  transition: 0.3s;
+}
+.l-faq__inner__item__a__txt {
+  font-size: 26px;
+  line-height: 1.5;
+  font-weight: 500;
+  padding: 1.2em;
+  background-color: var(--d-gray);
+  white-space: pre-line;
+}
+
+@media screen and (max-width: 750px) {
+  .l-faq__inner {
+    width: 100%;
+    padding: 3rem 1rem;
+  }
+  .l-faq__inner__heading {
+    font-size: 2rem;
+  }
+  .l-faq__inner__item__q {
+    padding: 1rem 1.5rem 1rem 1rem;
+  }
+  .l-faq__inner__item__q__txt,
+  .l-faq__inner__item__a__txt {
+    font-size: 1.2rem;
+  }
+  .l-faq__inner__item__q__txt::after {
+    height: 1rem;
+    width: 1rem;
+  }
+}

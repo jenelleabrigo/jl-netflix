@@ -1,0 +1,16 @@
+.c-button {
+  padding: 7px 0;
+  width: 85px;
+  background-color: var(--red);
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  border: 0;
+  user-select: none;
+  cursor: pointer;
+}
+
+.c-button:hover {
+  background-color: var(--red-hover);
+}

@@ -1,0 +1,17 @@
+:root {
+  --d-gray: #222;
+  --m-gray: #737373;
+  --l-gray: #8c8c8c;
+  --red: #e50914;
+  --red-hover: #f40612;
+}
+
+.u-layout {
+  max-width: 1100px;
+  margin: auto;
+}
+
+@media screen and (max-width: 576px) {
+  max-width: 100%;
+  padding: 0 1rem;
+}

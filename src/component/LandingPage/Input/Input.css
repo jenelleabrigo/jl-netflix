@@ -1,0 +1,97 @@
+.c-input__txt {
+  font-size: 20px;
+  line-height: 1.1;
+  color: #fff;
+  text-align: center;
+}
+.c-input__email {
+  height: 60px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.c-input__email__container {
+  position: relative;
+  height: 100%;
+  width: 500px;
+}
+.c-input__email__container__label {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  transition: 0.3s;
+  font-size: 16px;
+  color: var(--l-gray);
+}
+.c-input__email__container input[type="email"] {
+  background-color: #fff;
+  border: 1px solid var(--l-gray);
+  padding: 10px 10px 0;
+  font-size: 16px;
+  line-height: 1.1;
+  height: 100%;
+  width: 100%;
+  transition: 0.3s;
+}
+.c-input__email__container input[type="email"]:focus-visible {
+  outline: 0;
+  border: 1px solid blue;
+}
+.c-input__email__container input[type="email"]:focus-visible ~ label {
+  transform: none;
+  top: 6px;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.c-input__btn {
+  height: 100%;
+  font-size: 26px;
+  color: #fff;
+  background-color: var(--red);
+  border: none;
+  padding: 0 31px;
+  cursor: pointer;
+}
+.c-input__btn__txt {
+  position: relative;
+  padding-right: 20px;
+}
+.c-input__btn__txt::after {
+  position: absolute;
+  content: "";
+  background: url("../../../assets/img/icons/chevron-right-slider.svg") no-repeat center center/cover;
+  height: 20px;
+  width: 10px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+.c-input__btn:hover {
+  background-color: var(--red-hover);
+}
+
+@media screen and (max-width: 750px) {
+  .c-input__email {
+    height: 2.5rem;
+    margin-top: 2.5rem;
+  }
+  .c-input__email__container {
+    width: 100%;
+  }
+  .c-input__btn {
+    font-size: 1rem;
+    width: 60%;
+    padding: 0;
+  }
+  .c-input__btn__txt {
+    padding-right: 16px;
+  }
+  .c-input__btn__txt::after {
+    height: 0.5rem;
+    width: 0.5rem;
+  }
+}
